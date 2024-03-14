@@ -1,0 +1,40 @@
+config: example/config
+parsed_cali_dataset: example/model_calibration/parsed_dataset
+parsed_test_dataset: example/model_test/parsed_dataset
+model_calibration_result_A: example/model_calibration/01-1_model_calibration_A
+model_calibration_result_B: example/model_calibration/01-2_model_calibration_B
+model_calibration_result_C: example/model_calibration/01-3_model_calibration_C
+
+# env1
+parsed_anchor_dataset: example/anchor_self_calibration1/parsed_dataset
+colmap_result: example/anchor_self_calibration1/02-1_create_colmap_prj/output/0
+parsed_colmap_result: example/anchor_self_calibration1/02-2_parse_colmap_result
+scale_free_matched_bspline: example/anchor_self_calibration1/02-3_match_bspline_to_colmap_traj
+initial_guess_scaled_state: example/anchor_self_calibration1/02-4_scale_matching_traj
+optimized_result_A: example/anchor_self_calibration1/02-5_full_batch_optimization_A
+optimized_result_B: example/anchor_self_calibration1/02-6_full_batch_optimization_B
+optimized_result_C: example/anchor_self_calibration1/02-7_full_batch_optimization_C
+anchor_prior: example/config/anchor_prior1.yaml
+parsed_filter_dataset: example/filtering_state_estimation1/parsed_dataset
+kalman_filter_result_A: example/filtering_state_estimation1/03-1_kalman_filter_A
+kalman_filter_result_AH: example/filtering_state_estimation1/03-2_kalman_filter_AH
+kalman_filter_result_B: example/filtering_state_estimation1/03-3_kalman_filter_B
+kalman_filter_result_BH: example/filtering_state_estimation1/03-4_kalman_filter_BH
+kalman_filter_result_C: example/filtering_state_estimation1/03-5_kalman_filter_C
+
+# env2
+# parsed_anchor_dataset: example/anchor_self_calibration2/parsed_dataset
+# colmap_result: example/anchor_self_calibration2/02-1_create_colmap_prj/output/0
+# parsed_colmap_result: example/anchor_self_calibration2/02-2_parse_colmap_result
+# scale_free_matched_bspline: example/anchor_self_calibration2/02-3_match_bspline_to_colmap_traj
+# initial_guess_scaled_state: example/anchor_self_calibration2/02-4_scale_matching_traj
+# optimized_result_A: example/anchor_self_calibration2/02-5_full_batch_optimization_A
+# optimized_result_B: example/anchor_self_calibration2/02-6_full_batch_optimization_B
+# optimized_result_C: example/anchor_self_calibration2/02-7_full_batch_optimization_C
+# anchor_prior: example/config/anchor_prior2.yaml
+# parsed_filter_dataset: example/filtering_state_estimation2/parsed_dataset
+# kalman_filter_result_A: example/filtering_state_estimation2/03-1_kalman_filter_A
+# kalman_filter_result_AH: example/filtering_state_estimation2/03-2_kalman_filter_AH
+# kalman_filter_result_B: example/filtering_state_estimation2/03-3_kalman_filter_B
+# kalman_filter_result_BH: example/filtering_state_estimation2/03-4_kalman_filter_BH
+# kalman_filter_result_C: example/filtering_state_estimation2/03-5_kalman_filter_C

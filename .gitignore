@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.clang-format
+*.bag
+__pycache__
+build
+compile_commands.json
+example/*/0*
